@@ -3,13 +3,8 @@ package com.example.demo.controller;
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.stream.Collectors;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,13 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.Book;
-import com.example.demo.entity.HotelGuest;
-import com.example.demo.entity.Room;
-import com.example.demo.entity.dto.AvailableRoom;
-import com.example.demo.entity.dto.roomDto;
 import com.example.demo.repo.BookingRepo;
-import com.example.demo.repo.GuestRepo;
-import com.example.demo.repo.RoomRepo;
 
 @RestController
 @RequestMapping(value="/Booking")
